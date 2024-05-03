@@ -3,11 +3,26 @@
   height: 100px;
   border-top: 1px solid #eaeaea;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
 .logo {
   height: 3em;
   margin: 5px;
+}
+
+.socialMedia {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* Creates two columns; adjust number for more icons */
+  justify-content: center; /* Center the grid within the container */
+  gap: 10px; /* Space between grid items */
+  /*left: 1%;*/
+}
+
+.githubIcon {
+  order: 1;
+}
+.linkedInIcon {
+  order: 2; /* Higher order numbers will move the item to the end */
 }

@@ -1,23 +1,23 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import styles from '@components/index.module.css'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Mark Lu's bio</title>
+        <link rel="icon" href="/mark.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
+        <h1 className={styles.topCorner} > something here</h1>
+        <Header title="Mark Lu's Bio" />
+        <p className={styles.description} >
+          Hi! welcome to my page. My name is Mark. I am a Cal (UC Berkeley) EECS grad and a US Marine Corps veteran. This is my landing page where I will be sharing both who I am and what I am about
         </p>
       </main>
-
-      <Footer />
     </div>
   )
 }
